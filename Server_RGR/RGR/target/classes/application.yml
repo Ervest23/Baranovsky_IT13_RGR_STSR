@@ -1,0 +1,25 @@
+server:
+  port: 8088
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  datasource:
+    platform: MySQL
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/automarket?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password: zxzx
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+
+  mvc:
+    handler-validation:
+      fail-fast: false
