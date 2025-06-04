@@ -18,7 +18,7 @@ GET
 
 получить автомобили по году выпуска /api/cars/by-year/{year}
 
-/api/cars/by-feature?type={type}&value={value} получить автомобили по характеристике
+получить автомобили по характеристике /api/cars/by-feature?type={type}&value={value} 
 
 получить количество автомобилей /api/cars/count
 
@@ -29,6 +29,8 @@ GET
 получить характеристику по ID /api/features/{id}
 
 получить характеристики по типу и значению /api/features/popular?limit={limit}
+
+получить популярные характеристики /api/features/popular?limit={limit}
 
 получить автомобили с данной характеристикой /api/features/{id}/cars
 
